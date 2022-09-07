@@ -3,7 +3,7 @@
 ###
 name: test2
 description: null
-version: d109dc819ed7381e8e33b93cd35cade9
+version: 17d4d91d537a73011dd1feb5668f17ec
 # The work queue that will handle this deployment's runs
 work_queue_name: default
 tags: []
@@ -28,8 +28,8 @@ infrastructure:
 flow_name: pipeline
 manifest_path: null
 storage:
-  repository: https://github.com/filipe-greenfact/testFlow
-  reference: null
+  repository: https://github.com/filipe-greenfact/testFlow.git
+  reference: github-deployments
   _block_document_id: fa265acf-ce1b-4871-994b-4590f1611b9b
   _block_document_name: gh-block
   _is_anonymous: false

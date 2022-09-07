@@ -1,4 +1,6 @@
 from prefect import task, flow, get_run_logger
+from prefect.filesystems import GitHub
+
 
 @task
 def get_data():
@@ -14,4 +16,6 @@ def pipeline():
     print_data(data)
 
 if __name__ == "__main__":
+    g = GitHub(repository="https://github.com/PrefectHQ/prefect.git", reference="github-deployments")
+    g.save("example")
     pipeline()
