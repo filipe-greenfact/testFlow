@@ -1,11 +1,11 @@
 ###
 ### A complete description of a Prefect Deployment for flow 'pipeline'
 ###
-name: gh
+name: test2
 description: null
 version: d109dc819ed7381e8e33b93cd35cade9
 # The work queue that will handle this deployment's runs
-work_queue_name: prod
+work_queue_name: default
 tags: []
 parameters: {}
 schedule: null
