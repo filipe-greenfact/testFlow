@@ -8,10 +8,10 @@ def get_data():
 def print_data(data):
     get_run_logger().info(f"This is your data: {data}!")
 
-@flow()
-def my_data_flow():
+@flow
+def pipeline():
     data = get_data()
     print_data(data)
 
 if __name__ == "__main__":
-    my_data_flow()
+    pipeline()
