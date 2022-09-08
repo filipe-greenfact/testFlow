@@ -1,9 +1,9 @@
 ###
 ### A complete description of a Prefect Deployment for flow 'pipeline'
 ###
-name: test2
+name: CME-Extract-Load-gh
 description: null
-version: 17d4d91d537a73011dd1feb5668f17ec
+version: 77140648ee02a4ed41d612046888cd15
 # The work queue that will handle this deployment's runs
 work_queue_name: default
 tags: []
@@ -35,7 +35,7 @@ storage:
   _is_anonymous: false
   _block_type_slug: github
 path: ''
-entrypoint: demo.py:pipeline
+entrypoint: cme_EL.py:pipeline
 parameter_openapi_schema:
   title: Parameters
   type: object
